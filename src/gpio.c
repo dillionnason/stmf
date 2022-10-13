@@ -1,3 +1,4 @@
+#include <stddef.h>
 #include "stm32l476xx.h"
 
 void GPIO_Init(char port, int pin, int mode, int otype, int afunction, int pupd) {
@@ -19,7 +20,12 @@ void GPIO_Init(char port, int pin, int mode, int otype, int afunction, int pupd)
 		case 'E':
 			GPIO = GPIOE;
 			break;
+		default:
+			GPIO = NULL;
+			break;
 	}
+
+	if (GPIO == NULL) return;
 	
 	/* Mode setting */
 	GPIO->MODER &= ~(0x3  << pin*2);
