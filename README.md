@@ -10,6 +10,8 @@ make
 ```
 
 ## Important Sources
-* RM0351 Reference Manual: STM32L4x5 and STM32L4x6 advanced Arm-based 32-bit MCUs
-* UM1879 User Manual: Discovery kit with STM32L476VG MCU
-* _Embedded Systems with Arm Cortex-M Microcontrollers in Assembly Language and C (Third Edition)_ - Dr. Yifeng Zhu
+* [RM0351 Reference Manual: STM32L4x5 and STM32L4x6 advanced Arm-based 32-bit MCUs](https://github.com/dillionnason/stmf/blob/master/docs/RM0351%20Reference%20Manual.pdf)
+* [UM1879 User Manual: Discovery kit with STM32L476VG MCU](https://github.com/dillionnason/stmf/blob/master/docs/UM1879%20User%20Manual.pdf)
+* _Embedded Systems with Arm Cortex-M Microcontrollers in Assembly Language and C (Third Edition)_
+  * Dr. Yifeng Zhu
+  * ISBN: 978-0-9826926-6-0
