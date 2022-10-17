@@ -10,7 +10,7 @@ void hardfault_handler(void) {
 
 extern unsigned long _etext,_data,_edata,_bss_start,_bss_end;
 
-	/* Copy DATA and BSS segments into RAM */
+/* Copy DATA and BSS segments into RAM */
 void Reset_Handler(void)	{
 
 	unsigned long *src, *dst;
@@ -27,6 +27,5 @@ void Reset_Handler(void)	{
 
 	/* Call main() */
 	main();
-
 }
 

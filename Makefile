@@ -1,6 +1,6 @@
 CC = arm-none-eabi-gcc
 
-CFLAGS = -g -O2 -Wall
+CFLAGS = -g -Og -Wall
 CFLAGS += -mlittle-endian -mthumb -mcpu=cortex-m4
 CFLAGS += -fno-common -fno-builtin
 
@@ -11,7 +11,7 @@ BIN = include
 -include ../Makefile.lib
 
 all: $(OBJ) 
-	ar rvs $(BIN)/stmf.a $(OBJ)
+	ar rvs $(BIN)/stmf.a $^
 
 %.o: %.c
 	$(CC) -o $@ -c $< $(CFLAGS)

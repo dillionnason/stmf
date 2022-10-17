@@ -1,11 +1,14 @@
 #ifndef STMF_H
 #define STMF_H
 
+#include <stdint.h>
+
 #include "../src/handlers.h"
 #include "../src/gpio.h"
 
-#define STACK_LOCATION (0x20000000+(96*1024))
 
+/* Embedded Systems Chapter 11.4 */
+#define STACK_LOCATION (0x20000000+(96*1024))
 /* Vector Table */
 uint32_t *myvectors[128]
 __attribute__ ((section(".isr_vector"))) = {

@@ -1,5 +1,5 @@
 # STM Framework
-A library to support development/prototyping on the STM32L476 Discovery board in C
+A library to support development/prototyping on the STM32L476 Discovery board in C. This library was developed on Linux with GCC and has not been tested on any other platforms. Dev log can be found on my [Github](https://dillionnason.github.io). 
 
 ## Building
 This will generate a static library under the include directory (stmf/include/stmf.a)
@@ -8,6 +8,10 @@ git clone https://github.com/dillionnason/stmf
 cd stmf
 make
 ```
+
+## Currently Targetted Interfaces
+- [  ] NVIC
+- [  ] GPIO 
 
 ## Important Sources
 * [RM0351 Reference Manual: STM32L4x5 and STM32L4x6 advanced Arm-based 32-bit MCUs](https://github.com/dillionnason/stmf/blob/master/docs/RM0351%20Reference%20Manual.pdf)
