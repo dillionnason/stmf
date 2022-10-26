@@ -3,8 +3,8 @@
 
 #include <stdint.h>
 
-#include "../src/handlers.h"
-#include "../src/gpio.h"
+#include "handlers.h"
+#include "gpio.h"
 
 
 /* Embedded Systems Chapter 11.4 */

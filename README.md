@@ -1,5 +1,7 @@
 # STM Framework
-A library to support development/prototyping on the STM32L476 Discovery board in C. This library was developed on Linux with GCC and has not been tested on any other platforms. Dev log can be found on my [Github](https://dillionnason.github.io). 
+A library to support development/prototyping on the STM32L476 Discovery board in C. This library was developed on Linux with GCC and has not been tested on any other platforms.
+
+**NOTE: This library is primarily for personal projects and is not actively developed.**
 
 ## Building
 This will generate a static library under the include directory (stmf/include/stmf.a)

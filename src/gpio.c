@@ -39,15 +39,14 @@ void GPIO_Init(GPIO_TypeDef* port, uint8_t pin, uint8_t mode, uint8_t otype, uin
  ******************************************************************************
  */
 
-int GPIO_Digital_Read(GPIO_TypeDef* port, int pin) {
+uint32_t GPIO_Digital_Read(GPIO_TypeDef* port, uint32_t pin) {
 	/* Return value in Input Data Register */
 	return (port->IDR & ~(0x1 << pin)) >> pin;
 }
 
-void GPIO_Digital_Write(GPIO_TypeDef* port, int pin, int value) {
+void GPIO_Digital_Write(GPIO_TypeDef* port, uint32_t pin, uint32_t value) {
 	if (value > 1) return;
 
 	port->ODR &= ~(0x1   << pin);
 	port->ODR |=  (value << pin);
 }
-
